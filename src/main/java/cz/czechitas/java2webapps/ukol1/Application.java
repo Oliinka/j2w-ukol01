@@ -15,7 +15,7 @@ public class Application {
 
     public static void main(String... args) {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(Application.class, args);
-        logger.info("Aplikace běží na adrese: http://localhost:{}", applicationContext.getEnvironment().getProperty("local.server.port"));
+        logger.info("Application runs on the address: http://localhost:{}", applicationContext.getEnvironment().getProperty("local.server.port"));
     }
 
 }
